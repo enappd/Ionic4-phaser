@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <title>Ionic App</title>
+
+  <base href="/"/>
+
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <meta name="msapplication-tap-highlight" content="no"/>
+
+  <link rel="icon" type="image/png" href="assets/icon/favicon.png"/>
+  <script src="assets/phaser.min.js"></script>
+  <!-- add to homescreen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  
+  <!-- Bad way to integrate the code in index.html itself -->
+  <!-- <script>
+    var game = new Phaser.Game(800, 600, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update });
+
+    function preload() {
+
+      game.load.image('lazur', 'assets/thorn_lazur.png');
+      game.load.spritesheet('mummy', 'assets/metalslug_mummy37x45.png', 37, 45, 18);
+
+    }
+
+    var back;
+    var mummy;
+    var anim;
+    var loopText;
+
+    function create(that) {
+
+      back = game.add.image(0, -400, 'lazur');
+      back.scale.set(2);
+      back.smoothed = false;
+
+      mummy = game.add.sprite(200, 360, 'mummy', 5);
+      mummy.scale.set(4);
+      mummy.smoothed = false;
+      anim = mummy.animations.add('walk');
+
+      anim.onStart.add(animationStarted, that);
+      anim.onLoop.add(animationLooped, that);
+      anim.onComplete.add(animationStopped, that);
+      console.log(that)
+      console.log(this)
+      anim.play(10, true);
+
+    }
+
+    function animationStarted(sprite, animation) {
+
+      game.add.text(32, 32, 'Animation started', { fill: 'white' });
+
+    }
+
+    function animationLooped(sprite, animation) {
+
+      if (animation.loopCount === 1) {
+        loopText = game.add.text(32, 64, 'Animation looped', { fill: 'white' });
+      }
+      else {
+        loopText.text = 'Animation looped x2';
+        animation.loop = false;
+      }
+
+    }
+
+    function animationStopped(sprite, animation) {
+
+      game.add.text(32, 64 + 32, 'Animation stopped', { fill: 'white' });
+
+    }
+
+    function update() {
+
+      if (anim.isPlaying) {
+        back.x -= 1;
+      }
+
+    }
+  </script> -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1976d2">
+</head>
+
+<body>
+  <app-root></app-root>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
+</body>
+
+</html>
