@@ -1,14 +1,10 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>
-      Home
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content>
-    <div id="phaser-example"></div>
+    <div id="space-invaders"></div>
+    <div class="buttons">
+      <ion-button color="danger" (touchstart)="fireStart($event)" (touchend)="fireEnd($event)">Fire</ion-button>
+      <ion-button (touchstart)="leftStart($event)" (touchend)="leftEnd($event)">Left</ion-button>
+      <ion-button (touchstart)="rightStart($event)" (touchend)="rightEnd($event)">Right</ion-button>
+    </div>
 </ion-content>

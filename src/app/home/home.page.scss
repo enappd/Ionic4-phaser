@@ -1,4 +1,9 @@
-.welcome-card ion-img {
-  max-height: 35vh;
-  overflow: hidden;
+.buttons{
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  ion-button:first-child{
+    flex: 2;
+  }
 }
