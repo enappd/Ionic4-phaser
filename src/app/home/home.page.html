@@ -1,10 +1,11 @@
-
-
 <ion-content>
-    <div id="space-invaders"></div>
-    <div class="buttons">
-      <ion-button color="danger" (touchstart)="fireStart($event)" (touchend)="fireEnd($event)">Fire</ion-button>
-      <ion-button (touchstart)="leftStart($event)" (touchend)="leftEnd($event)">Left</ion-button>
-      <ion-button (touchstart)="rightStart($event)" (touchend)="rightEnd($event)">Right</ion-button>
-    </div>
+  <ion-button class="menu-button" routerLink="/" color="danger">
+    Close
+  </ion-button>
+  <div id="space-invaders"></div>
+  <div class="buttons phone-only">
+    <ion-button color="danger" (touchstart)="fireStart($event)" (touchend)="fireEnd($event)">Fire</ion-button>
+    <ion-button (touchstart)="leftStart($event)" (touchend)="leftEnd($event)">Left</ion-button>
+    <ion-button (touchstart)="rightStart($event)" (touchend)="rightEnd($event)">Right</ion-button>
+  </div>
 </ion-content>
