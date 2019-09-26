@@ -1,7 +1,8 @@
 {
   "name": "ioniser",
   "integrations": {
-    "cordova": {}
+    "cordova": {},
+    "capacitor": {}
   },
   "type": "angular"
 }
