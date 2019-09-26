@@ -1,0 +1,7 @@
+{
+  "appId": "com.enappd.ioniser",
+  "appName": "Ioniser",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}

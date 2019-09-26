@@ -1,0 +1,7 @@
+{
+  "name": "Ioniser",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
